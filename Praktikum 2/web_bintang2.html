@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <form id="registrationForm">
+        <h2>Daftar Akun Baru</h2>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Kata Sandi:</label>
+        <input type="password" id="password" name="password">
+        <label for="hobi">Hobi:</label>
+        <input type="text" id="hobi" name="hobi">
+
+        
+        <div>
+            <label for="pk"><p>Peminatan Konsentrasi:</p></label>
+            <select id="pk" name="pk" class="select-input">
+              <option value="Keamanan Informasi">Keamanan Informasi</option>
+              <option value="RPL">RPL</option>
+              <option value="Grafika Komputer">Grafika Komputer</option>
+            </select>
+            <br>
+        </div>
+        
+        <div>
+          <p>Agama:</p>
+          <label><input type="radio" name="agama" value="Islam" class="radio-input">Islam</label>
+          <label><input type="radio" name="agama" value="Kristen" class="radio-input">Kristen</label>
+          <label><input type="radio" name="agama" value="Katolik" class="radio-input">Katolik</label>
+          <label><input type="radio" name="agama" value="Hindu" class="radio-input">Hindu</label>
+          <label><input type="radio" name="agama" value="Buddha" class="radio-input">Buddha</label>
+          <label><input type="radio" name="agama" value="Konghucu" class="radio-input">Konghucu</label>
+          <br>
+        </div>
+
+        <button type="submit">Daftar</button>
+        </form>
+    </form>
+</body>
+</html>
