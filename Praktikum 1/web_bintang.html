@@ -1,0 +1,78 @@
+<?xml version=”1.0” encoding=”UTF-8”?>
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN” ”DTD/xhtml1-strict.dtd”>
+<html>
+<head>
+    <meta name="description" content="Ini adalah menu input biodata">
+    <title>web2</title>
+</head>
+<body>
+    <form name="formSatu"><legend><b><font color="blue">Data Input</font></b></legend>
+        <fieldset>
+            <table border="0">
+                <table border="0" cellspacing="2" bgcolor="blue">
+                    <tr>
+                        <td bgcolor="white">NIM:</td>
+                        <td><input type="text" name="id"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white">Nama:</td>
+                        <td><input type="text" name="nama"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white">Alamat:</td>
+                        <td><input type="text" name="alamat"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white">Email:</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white">Hobi:</td>
+                        <td><input type="text" name="hobi"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white">Jenis Kelamin:</td>
+                        <td><select name="sex">
+                            <option value="perempuan">Perempuan</option>
+                            <option value="laki-laki">Laki-Laki</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white">Agama:</td>
+                        <td bgcolor="blue">
+                            <input type="radio" name="ag01" value="Islam"><font color="white"><b>Islam</b></font><br>
+                            <input type="radio" name="ag01" value="Protestan"><font color="white"><b>Protestan</b></font><br>
+                            <input type="radio" name="ag01" value="Katolik"><font color="white"><b>Katolik</b></font><br>
+                            <input type="radio" name="ag01" value="Budha"><font color="white"><b>Budha</b></font><br>
+                            <input type="radio" name="ag01" value="Hindu"><font color="white"><b>Hindu</b></font><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white">Status:</td>
+                        <td bgcolor="blue">
+                            <input type="radio" name="st" value="Single"><font color="white"><b>Single</b></font><br>
+                            <input type="radio" name="st" value="Married"><font color="white"><b>Married</b></font><br>
+                            <input type="radio" name="st" value="Complicated"><font color="white"><b>Complicated</b></font><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white">Peminatan Konsentrasi:</td>
+                        <td bgcolor="blue">
+                            <input type="radio" name="pk" value="Keamanan Informasi"><font color="white"><b>Keamanan Informasi</b></font><br>
+                            <input type="radio" name="pk" value="RPL"><font color="white"><b>RPL</b></font><br>
+                            <input type="radio" name="pk" value="Grafika Komputer"><font color="white"><b>Grafika Komputer</b></font><br>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><input type="button" value="Save"></td>
+                        <td><input type="button" value="Edit"></td>
+                        <td><input type="button" value="Delete" name="hapus"></td>
+                        <td><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+        </fieldset>
+    </form>
+</body>
+</html>
