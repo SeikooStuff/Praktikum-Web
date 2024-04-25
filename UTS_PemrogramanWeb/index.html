@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Supri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="rekam">
+        <header>Rekam Barang</header>
+        <form class="form">
+            <div class="input-box">
+                <label for="kode">Kode Barang</label>
+                <input type="text" id="kode" name="kode" placeholder="Kode">
+            </div>
+
+            <div class="input-box">
+                <label for="nama">Nama Barang</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama">
+            </div>
+
+            <div class="input-box">
+                <label for="tahun">Tahun Pembuatan</label>
+                <input type="number" id="tahun" name="tahun" min="1900" max="2099" placeholder="Tahun">
+            </div>
+
+            <div class="kategori-box">
+                <h3>Kategori</h3>
+                <div class="kategori-option">
+                    <div class="kategori">
+                        <input type="radio" id="kategori_fashion" name="kategori" value="Fashion">
+                        <label for="kategori_fashion">Fashion</label>
+                    </div>
+                    <div class="kategori">
+                        <input type="radio" id="kategori_elektronik" name="kategori" value="Elektronik">
+                        <label for="kategori_elektronik">Elektronik</label>
+                    </div>
+                    <div class="kategori">
+                        <input type="radio" id="kategori_aksesoris" name="kategori" value="Aksesoris">
+                        <label for="kategori_aksesoris">Aksesoris</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="jumlah">Jumlah Item</label>
+                <input type="number" id="jumlah" name="jumlah" min="1" max="100" placeholder="Jumlah">
+            </div>
+
+            <div class="input-box">
+                <label for="harga">Harga</label>
+                <input type="number" id="harga" name="harga" placeholder="Harga">
+            </div>
+
+            <button type="button" id="addButton" onclick="addBarang()">Tambah</button>
+
+            <div class="input-box">
+                <label>Cari Barang</label>
+                <input type="text" id="searchInput" placeholder="Cari barang yang terdaftar" onkeyup="searchBarang()">
+            </div>
+            <table id="barangTable">
+                <thead>
+                    <tr>
+                        <th>Kode</th>
+                        <th>Nama</th>
+                        <th>Tahun</th>
+                        <th>Kategori</th>
+                        <th>Jumlah</th>
+                        <th>Harga</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="barangTableBody"></tbody>
+            </table>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
